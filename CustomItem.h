@@ -12,6 +12,7 @@ class CustomItem: public IceCreamItem{
         CustomItem(std::string size);
         virtual ~CustomItem();
         void addTopping(std::string topping);
+        virtual double getPrice();
         virtual std::string composeItem();
     private:
         std::map<std::string,int> toppings;

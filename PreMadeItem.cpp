@@ -14,6 +14,9 @@ PreMadeItem::PreMadeItem(std::string name, std::string size) : IceCreamItem(size
 PreMadeItem::~PreMadeItem() {
     // No dynamic memory to clean up, but necessary for polymorphism
 }
+double PreMadeItem::getPrice(){
+    return price;
+}
 std::string PreMadeItem::composeItem(){
     std::ostringstream stream;
     stream << std::fixed << std::setprecision(2);
